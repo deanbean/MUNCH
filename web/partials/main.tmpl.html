@@ -7,7 +7,7 @@ Search: <input ng-model="searchText" class="box">
                 <h3>{{ result.food }}</h3>
             </div>
             <div class="col-md-6 box">
-                <input type="checkbox" ng-click="saveResult(result.id)"> Save Result
+                <input type="checkbox" ng-click="saveResult(result)"> Save Result
             </div>
         </div>
         <div class="row indent">
@@ -15,6 +15,12 @@ Search: <input ng-model="searchText" class="box">
                 {{sub}}<span ng-show=" ! $last ">, </span>
             </span>
         </div>
+    </div>
+
+    <div>
+    <h2>Your Saved List</h2>
+    <div ng-repeat="item in user.savedResults">
+        {{ item.food }}
     </div>
 </div>
 

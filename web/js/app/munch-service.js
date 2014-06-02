@@ -1,6 +1,6 @@
 munchApp
 
-.factory('MunchService', function ($http) {
+.factory('MunchService', function ($http, $rootScope) {
     var api_url = 'http://localhost:8000/api/';
 
     var MunchService = {
@@ -36,11 +36,13 @@ munchApp
                 obj
             );
         },
-        save: function (url, obj) {
-            return $http.post(
-                api_url + url,
-                obj
-            );
+        save: function (url, obj, userId) {
+            //return $http.post(
+            //    api_url + url,
+            //    obj
+            //);
+            $rootScope.users[1].savedResults.push(obj);
+            console.log('save this: ', $rootScope.users);
         },
 
     };
