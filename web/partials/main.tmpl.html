@@ -1,2 +1,11 @@
-TEST: {{test}}<br />
-foods: {{foods}}<br />
+Search: <input ng-model="searchText" class="box">
+<hr />
+<div class="container">
+    <div ng-show="searchText.length > 0" ng-repeat="result in results | filter:searchText">
+      <div class="row"><h3>{{ result.food }}</h3></div>
+      <div class="row indent">
+          <span ng-repeat="sub in result.subs">{{sub}}</span>
+      </div> 
+    </div>
+</div>
+
