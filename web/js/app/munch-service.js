@@ -15,15 +15,16 @@ munchApp
                         id: 1, food: 'Gluten', subs: ['Rice', 'Coconut', 'Oat',]
                     },
                     {
-                        id: 2, food: 'Cabbage', subs: ['Reese\'s Pieces'],
+                        id: 2, food: 'Cabbage', subs: ['Reese\'s Pieces',],
                     },
                 ]
             };
         },
         get: function (items_url, objId) {
-            return $http.get(
-                api_url + items_url + objId
-            );
+            //return $http.get(
+            //    api_url + items_url + objId
+            //);
+            return {id: 1, username: 'sam', restrictions: ['gluten', 'dairy'], savedResults: [], location: 'Canada'};
         },
         del: function(obj_url, obj) {
             return $http.delete(
@@ -41,8 +42,7 @@ munchApp
             //    api_url + url,
             //    obj
             //);
-            $rootScope.users[1].savedResults.push(obj);
-            console.log('save this: ', $rootScope.users);
+            $rootScope.user.savedResults.push(obj);
         },
 
     };

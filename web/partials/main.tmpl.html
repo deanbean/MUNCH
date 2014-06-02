@@ -1,17 +1,23 @@
+<h1>Welcome to Munch!</h1>
+<hr />
 Search: <input ng-model="searchText" class="box">
 <hr />
+<div ng-repeat="user in users | orderByPriority">
+  {{user.username}}
+</div>
+
 <div class="container row">
     <div ng-show="searchText.length > 0" ng-repeat="result in results | filter:searchText">
         <div class="row box">
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <h3>{{ result.food }}</h3>
                 <div class="row indent">
                 <span ng-repeat="sub in result.subs">
-                    {{sub}}<span ng-show=" ! $last ">, </span>
+                    {{ sub }}<span ng-show=" ! $last ">, </span>
                 </span>
             </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <input type="checkbox" ng-click="saveResult(result)"> Save Result
             </div>
         </div>

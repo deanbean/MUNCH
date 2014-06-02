@@ -1,0 +1,16 @@
+<h1>Your Munch Profile</h1>
+<hr />
+<div class="row box">
+    <div class="col-sm-4">Username</div><div class="col-sm-8">{{user.username}}</div>
+</div>
+<div class="row box">
+    <div class="col-sm-4">Restrictions</div><div class="col-sm-8"><span ng-repeat="r in user.restrictions">{{r}}<span ng-show=" ! $last ">, </span></span></div>
+</div>
+<div class="row box">
+    <div class="col-sm-4">Notes</div><div class="col-sm-8"></div>
+</div>
+<div class="row box">
+    <div class="col-sm-4">Saved Results</div><div class="col-sm-8"><span ng-repeat="item in user.savedResults">{{item.food}}<span ng-show=" ! $last ">, </span></span></div>
+</div>
+
+
