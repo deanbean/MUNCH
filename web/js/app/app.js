@@ -21,8 +21,8 @@ munchApp
                     templateUrl: '../web/partials/main.tmpl.html',
                     controller: 'MainCtrl',
                     resolve: {
-                        users: function (MunchService) {
-                            return MunchService.list('users/');
+                        foods: function (MunchService) {
+                            return MunchService.list('foods/');
                             //return {data: 'munch some stuff'};
                         },
                     }
