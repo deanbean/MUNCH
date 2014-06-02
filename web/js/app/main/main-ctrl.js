@@ -4,4 +4,8 @@ munchApp
     console.log('main ctrl', results.data);
     $scope.results = results.data;
     $scope.test = 'Angular Online!';
+
+    $scope.saveResult = function (id) {
+        // save result here
+    }
 });

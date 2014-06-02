@@ -12,10 +12,10 @@ munchApp
             return {
                 data: [
                     {
-                        food: 'Gluten', subs: ['Rice', 'Coconut', 'Oat',]
+                        id: 1, food: 'Gluten', subs: ['Rice', 'Coconut', 'Oat',]
                     },
                     {
-                        food: 'Cabbage', subs: ['Reese\'s Pieces'],
+                        id: 2, food: 'Cabbage', subs: ['Reese\'s Pieces'],
                     },
                 ]
             };
