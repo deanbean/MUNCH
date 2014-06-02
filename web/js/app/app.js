@@ -18,12 +18,12 @@ munchApp
             url: '/',
             views: {
                 'main': {
-                    template: '<div>Munch!</div>',
+                    templateUrl: '../web/partials/main.tmpl.html',
                     controller: 'MainCtrl',
                     resolve: {
                         users: function (MunchService) {
-                            //return GeminiService.list('users/');
-                            return {data: 'foo'};
+                            return MunchService.list('users/');
+                            //return {data: 'munch some stuff'};
                         },
                     }
                 },

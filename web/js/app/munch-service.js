@@ -9,14 +9,16 @@ munchApp
             //return $http.get(
             //    api_url + items_url
             //);
-            return [
-                {
-                    food: 'Gluten', subs: ['Rice', 'Coconut', 'Oat',]
-                },
-                {
-                    food: 'Cabbage', subs: ['Reese\'s Pieces'],
-                },
-            ]
+            return {
+                data: [
+                    {
+                        food: 'Gluten', subs: ['Rice', 'Coconut', 'Oat',]
+                    },
+                    {
+                        food: 'Cabbage', subs: ['Reese\'s Pieces'],
+                    },
+                ]
+            };
         },
         get: function (items_url, objId) {
             return $http.get(
