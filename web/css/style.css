@@ -2,6 +2,8 @@ body{
     background: url("../img/Banner_Image.png") no-repeat;
     margin-left: auto;
     margin-right: auto;
+    color:#ffffff;
+    padding:10px;
 
 }
 #mini_profile{
@@ -9,6 +11,10 @@ body{
 }
 #main {
     background-color: rgba(255,255,255,0.3);
+
+}
+.notesBody{
+    padding: 10px;
 }
 .top-nav {
     background-color: #363636;
@@ -40,8 +46,9 @@ body{
 }
 .is-restricted-true {
     font-weight: bold;
-    background: purple;
+    background: #ffaa00;
     color: white;
+    padding: 4px;
 }
 .big-list li {
     font-size: 1.2em;
