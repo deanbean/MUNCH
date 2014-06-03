@@ -11,8 +11,8 @@
     <div class="row box">
         <h2>Restrictions</h2>
         <form name="newRestrictionForm">
-            <input ng-model="newRestriction.food" type="text" id="new-restriction-food" placeholder="add food" required />
-            <input ng-model="newRestriction.severity" type="text" id="new-restriction-severity" placeholder="add restriction" required />
+            <input ng-model="newRestriction.food" type="text" id="new-restriction-food" placeholder="add food..." required />
+            <input ng-model="newRestriction.severity" type="text" id="new-restriction-severity" placeholder="add restriction..." required />
             <br /><br />
             <a id="new-{{type}}-submit" class="btn btn-success" ng-disabled="newRestrictionForm.$invalid" ng-click="addRestriction(newRestriction)">Add New Restriction</a>
         </form>

@@ -2,11 +2,12 @@
 <hr />
 <div class="container row">
     <div class="col-sm-8">
-        <input type="search" ng-model="searchText" class="form-control" placeholder="Search">
+        <input type="search" ng-model="searchText" class="form-control" placeholder="Search...">
+        <hr />
         <div ng-show="searchText.length > 0" ng-repeat="result in results | filter:searchText">
             <div class="row box margin-bottom">
                 <div class="col-sm-9">
-                    <h3>{{ result.food }}</h3>
+                    <h2>{{ result.food }}</h2>
                     <div class="row indent">
                         <span ng-repeat="sub in result.subs">
                             <span class="is-restricted-{{ sub | isRestrictedFilter: user.restrictions }}">{{ sub }}</span><span ng-show=" ! $last ">, </span></span>

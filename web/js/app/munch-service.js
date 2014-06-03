@@ -27,19 +27,19 @@ munchApp
             if(objId) {
                 return {
                     id: 1, username: 'homer', firstname: 'Homer', lastname: 'Simpson', avatar: 'homer.jpg', restrictions: [
-                        {food: 'coconut', 'severity': 'allergy'},
-                        {food: 'dairy', 'severity': 'preference'}
+                        {food: 'coconut', severity: 'allergy'},
+                        {food: 'dairy', severity: 'preference'}
                     ], savedResults: [], location: 'Canada'};
             }
             else {
                 return [
-                    {id: 1, username: 'homer', firstname: 'Homer', lastname: 'Simpson', avatar: 'homer.jpg', restrictions: [
-                        {food: 'coconut', 'severity': 'allergy'},
-                        {food: 'dairy', 'severity': 'preference'}
+                    {id: 1, username: 'bart', firstname: 'Bart', lastname: 'Simpson', avatar: 'bart.png', restrictions: [
+                        {food: 'coconut', severity: 'allergy'},
+                        {food: 'peanuts', severity: 'preference'}
                     ], savedResults: [], location: 'Canada'},
                     {id: 2, username: 'marge', firstname: 'Marge', lastname: 'Simpson', avatar: 'marge.jpg', restrictions: [
-                        {food: 'rice', 'severity': 'allergy'},
-                        {food: 'nuts', 'severity': 'preference'}
+                        {food: 'dairy', severity: 'allergy'},
+                        {food: 'rice', severity: 'preference'}
                     ], savedResults: [], location: 'Canada'},
                 ]
             }
