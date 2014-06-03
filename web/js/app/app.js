@@ -88,6 +88,20 @@ munchApp
                     }
                 },
             }
+        })
+        .state('contact', {
+            url: '/contact/',
+            views: {
+                'main': {
+                    templateUrl: '../web/partials/contact.tmpl.html',
+                    controller: 'ContactCtrl',
+                    resolve: {
+                        contact: function (MunchService) {
+                            return {data: {twitter: 'bal@blah', email: 'deanna.m.cooney@gmail.com'},};
+                        },
+                    }
+                },
+            }
         });
 })
 
