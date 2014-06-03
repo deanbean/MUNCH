@@ -1,5 +1,5 @@
 body{
-    background: url("../img/Banner_Image.jpg") no-repeat;
+    background: url("../img/Banner_Image.jpg");
     margin-left: auto;
     margin-right: auto;
     color:#ffffff;
@@ -49,13 +49,13 @@ hr {
     color: #ffec4f;
 }
 .severity-intolerance {
-    color: #c66600;
+    color: #d68f00;
 }
 .severity-preference {
     color: #ffbf3f;
 }
 .severity-default {
-    color: #ffaa00;
+    color: #ffcb64;
 }
 .is-restricted-true {
     font-weight: bold;
