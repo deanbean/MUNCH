@@ -16,18 +16,23 @@
             <br /><br />
             <a id="new-{{type}}-submit" class="btn btn-success" ng-disabled="newRestrictionForm.$invalid" ng-click="addRestriction(newRestriction)">Add New Restriction</a>
         </form>
+    </div>
         <hr />
+    <div class="row">
+        <div class="col-sm-10">
+        <h2>Your Restrictions</h2>
         <ul class="big-list">
             <li ng-repeat="item in user.restrictions" class="severity-{{item.severity}}"><strong>{{item.food}}</strong> [{{item.severity}}]</li>
         </ul>
+        </div>
     </div>
     <div class="row notesbox">
         <h2>Notes</h2>
-        <div class="notesBody">
+        <div class="notesBody col-sm-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed urna vitae massa tempus ullamcorper interdum ac ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis adipiscing tortor rutrum tortor vehicula cursus. Sed a malesuada tortor. Phasellus libero erat, luctus vitae urna non, mattis laoreet mi. Maecenas a metus id lorem pretium aliquet. Vestibulum ultrices velit at magna imperdiet volutpat. Praesent et varius est. Fusce nec massa in mauris placerat rutrum scelerisque ut augue.
         </div>
     </div>
-    <div class="row box">
+    <div class="row">
         <h2>Saved Results</h2>
         <ul>
             <li ng-repeat="item in user.savedResults">{{item.food}}</li>
