@@ -1,17 +1,13 @@
 munchApp
 
-.controller('MainCtrl', function ($scope, $rootScope, $firebase, MunchService, results) {
+.controller('MainCtrl', function ($scope, $rootScope, $firebase, MunchService, user, results) {
     $scope.results = results.data;
-    //var userRef = new Firebase("https://munchio.firebaseio.com/users/-JOTOAanXpKaaqE3c57X/");
-    // Automatically syncs everywhere in realtime
-    //$scope.user = $firebase(userRef);
+    var userRef = new Firebase("https://munchio.firebaseio.com/users/");
+    $scope.fireUser = $firebase(userRef);
+
+    //console.log('fire-user ', $scope.fireUser.child('username'));
     
-    $scope.test = 'Angular Online!';
-
-    $rootScope.user = {id: 1, username: 'sam', restrictions: ['gluten', 'dairy'], savedResults: [], location: 'Canada'};
-
-    console.log('user: ', $scope.user);
-    //$scope.users = $rootScope.users;
+    $rootScope.user = user.data;
 
     $scope.saveResult = function (obj) {
         // save result here

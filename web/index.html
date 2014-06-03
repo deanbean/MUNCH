@@ -6,10 +6,13 @@
     </head>
         <body ng-app="munchApp" ng-init="">
         <div class="container">
-            <nav class="navbar navbar-default" role="navigation">
+            <nav class="navbar navbar-default">
                 <ul class="nav navbar-nav">
                     <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
                     <li ui-sref-active="active"><a ui-sref="profile">Profile</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a>Logged in as <strong>{{user.username}}</strong></a></li>
                 </ul>
             </nav>
         </div>

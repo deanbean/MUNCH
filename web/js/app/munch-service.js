@@ -12,10 +12,10 @@ munchApp
             return {
                 data: [
                     {
-                        id: 1, food: 'Gluten', subs: ['Rice', 'Coconut', 'Oat',]
+                        id: 1, food: 'Gluten', subs: ['rice', 'coconut', 'oat',]
                     },
                     {
-                        id: 2, food: 'Cabbage', subs: ['Reese\'s Pieces',],
+                        id: 2, food: 'Cabbage', subs: ['reese\'s pieces',],
                     },
                 ]
             };
@@ -24,7 +24,7 @@ munchApp
             //return $http.get(
             //    api_url + items_url + objId
             //);
-            return {id: 1, username: 'sam', restrictions: ['gluten', 'dairy'], savedResults: [], location: 'Canada'};
+            return {id: 1, username: 'sam', restrictions: ['cocount', 'dairy'], savedResults: [], location: 'Canada'};
         },
         del: function(obj_url, obj) {
             return $http.delete(

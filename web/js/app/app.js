@@ -21,8 +21,12 @@ munchApp
                     controller: 'MainCtrl',
                     resolve: {
                         results: function (MunchService) {
-                            return MunchService.list('results/');
+                            return MunchService.list('foods');
                             //return {data: 'munch some stuff'};
+                        },
+                        user: function (MunchService) {
+                            userId = 1;
+                            return {data: MunchService.get('users/', userId)};
                         },
                     }
                 },
