@@ -27,3 +27,10 @@
     background: purple;
     color: white;
 }
+/* search */
+input[type=search] {    
+    padding: 30px;
+    width: 500px;
+    border: 2px solid gray;
+    font-size: 2em;
+}
