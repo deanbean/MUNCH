@@ -3,6 +3,7 @@ var munchApp = angular.module('munchApp',
      'ui.bootstrap',
      'ui.router',
      'ngAnimate',
+     'firebase'
     ]
 );
 
@@ -10,11 +11,9 @@ var munchApp = angular.module('munchApp',
 munchApp
 
 .config(function($stateProvider, $urlRouterProvider){
-  
-    $urlRouterProvider.when('', '/');
 
     $stateProvider
-        .state('default', {
+        .state('home', {
             url: '/',
             views: {
                 'main': {
@@ -22,8 +21,27 @@ munchApp
                     controller: 'MainCtrl',
                     resolve: {
                         results: function (MunchService) {
-                            return MunchService.list('results/');
+                            return MunchService.list('foods');
                             //return {data: 'munch some stuff'};
+                        },
+                        user: function (MunchService) {
+                            userId = 1;
+                            return {data: MunchService.get('users/', userId)};
+                        },
+                    }
+                },
+            }
+        })
+        .state('profile', {
+            url: '/profile/',
+            views: {
+                'main': {
+                    templateUrl: '../web/partials/profile.tmpl.html',
+                    controller: 'ProfileCtrl',
+                    resolve: {
+                        user: function (MunchService) {
+                            userId = 1;
+                            return {data: MunchService.get('users/', userId)};
                         },
                     }
                 },

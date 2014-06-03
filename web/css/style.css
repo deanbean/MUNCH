@@ -1,5 +1,11 @@
 .box {
-    border: 1px solid green !important;
+    border: 1px solid #efefef !important;
+}
+.padding-top {
+    padding-top: 20px;
+}
+.margin-bottom {
+    margin-bottom: 5px;
 }
 .indent {
     padding-left: 30px;
