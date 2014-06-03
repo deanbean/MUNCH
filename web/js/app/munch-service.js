@@ -28,7 +28,7 @@ munchApp
                 return {
                     id: 1, username: 'homer', firstname: 'Homer', lastname: 'Simpson', avatar: 'homer.jpg', restrictions: [
                         {food: 'coconut', severity: 'allergy'},
-                        {food: 'soy', severity: 'severe intolerance'},
+                        {food: 'soy', severity: 'severe-intolerance'},
                         {food: 'mustard', severity: 'intolerance'},
                         {food: 'vegan', severity: 'preference'},
                     ], savedResults: [], location: 'Canada'};

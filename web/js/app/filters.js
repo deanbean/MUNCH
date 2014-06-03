@@ -11,7 +11,7 @@ angular.module('customFilters', [])
                 //console.log('input '+i, input);                
                 //console.log('res '+i, restrictions[i].food);
                 if (input.toLowerCase() == restrictions[i].food) {
-                    console.log('YEAH');
+                    //console.log('YEAH');
                     isRestricted = true;
                     return isRestricted;
                 }
