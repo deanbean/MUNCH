@@ -52,13 +52,16 @@ hr {
     color: #ffbf3f;
 }
 .severity-intolerance {
-    color: #d68f00;
+    /* color: #d68f00; */
+    color: #ffcb64;
 }
 .severity-preference {
-    color: #ffbf3f;
+    /*color: #ffbf3f;*/
+    color: #ea9d01;
 }
 .severity-default {
-    color: #ffcb64;
+   /* color: #ffcb64; */
+   color: #ffbf3f;
 }
 .is-restricted-true {
     font-weight: bold;
