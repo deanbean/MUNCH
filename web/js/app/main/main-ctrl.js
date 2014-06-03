@@ -2,8 +2,8 @@ munchApp
 
 .controller('MainCtrl', function ($scope, $rootScope, $firebase, MunchService, user, results) {
     $scope.results = results.data;
-    var userRef = new Firebase("https://munchio.firebaseio.com/users/");
-    $scope.fireUser = $firebase(userRef);
+    //var userRef = new Firebase("https://munchio.firebaseio.com/users/");
+    //$scope.fireUser = $firebase(userRef);
 
     //console.log('fire-user ', $scope.fireUser.child('username'));
     
