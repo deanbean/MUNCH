@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-munch_aware-20140602151236;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-munch_aware-20140602151236.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ankit\\Desktop\\munch_aware_postNewTables\\munch_aware\\munch_aware\\munch_aware\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
