@@ -14,6 +14,10 @@ body{
     background-color: #363636;
     font: #ffffff;
 }
+.navbar-nav>li>a {
+    padding-top: 30px;
+    font-size: 1.8em;
+}
 .box {
     border: 1px solid #efefef !important;
 }
@@ -27,16 +31,24 @@ body{
     padding-left: 30px;
 }
 .severity-allergy {
-    color: red;
+    background: red;
+    padding: 5px;
+    color: white;
 }
 .severity-intolerance {
-    color: orange;
+    background: orange;
+    padding: 5px;
+    color: white;
 }
 .severity-preference {
-    color: blue;
+    background: blue;
+    padding: 5px;
+    color: white;
 }
 .severity-default {
-    color: green;
+    background: green;
+    padding: 5px;
+    color: white;
 }
 .is-restricted-true {
     font-weight: bold;
