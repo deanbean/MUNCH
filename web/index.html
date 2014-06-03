@@ -5,16 +5,16 @@
         <link rel="stylesheet" href="css/style.css" rel="stylesheet">
     </head>
         <body ng-app="munchApp" ng-init="">
-            <nav class="navbar navbar-inverse navbar-static-top">
+            <nav class="navbar navbar-inverse navbar-static-top" "top-nav">
                 <div class="container">
-                  <a ui-sref-active="active" ui-sref="home" class="navbar-brand">Munch</a>
+                  <a ui-sref-active="active" ui-sref="home" class="navbar-brand"><img src="img/MUNCH_logo.png" alt="MUNCH Logo"></a>
                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                        <span class="icon-bar"></span>
                        <span class="icon-bar"></span>
                        <span class="icon-bar"></span>
                    </button>
                    <div class="collapse navbar-collapse navHeaderCollapse">
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav"> 
                             <li ui-sref-active="active"><a ui-sref="profile">Profile</a></li>
                             <li ui-sref-active="active"><a ui-sref="users">Users</a></li>
                         </ul>
@@ -27,7 +27,7 @@
                 </div>
             </nav>
 
-        <div class="container box">
+        <div id="main" class="container box">
             <!-- MAIN VIEW -->
             <div ui-view="main"></div>
             <!-- / MAIN VIEW -->

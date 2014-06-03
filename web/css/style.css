@@ -1,3 +1,13 @@
+body{
+    background: url("../img/Banner_Image.png") no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.top-nav {
+    background-color: #363636;
+    font: #ffffff;
+}
 .box {
     border: 1px solid #efefef !important;
 }
@@ -29,6 +39,9 @@
 }
 .big-list li {
     font-size: 1.2em;
+}
+.navbar-brand {
+    padding-right: 20px;
 }
 /* search */
 input[type=search], input[type=text] {    
