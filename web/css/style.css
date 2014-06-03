@@ -48,6 +48,9 @@ hr {
 .severity-allergy {
     color: #ffec4f;
 }
+.severity-severe-intolerance {
+    color: #ffbf3f;
+}
 .severity-intolerance {
     /* color: #d68f00; */
     color: #ffcb64;
