@@ -27,10 +27,14 @@
     background: purple;
     color: white;
 }
+.big-list li {
+    font-size: 1.2em;
+}
 /* search */
-input[type=search] {    
+input[type=search], input[type=text] {    
     padding: 30px;
     width: 500px;
     border: 2px solid gray;
     font-size: 2em;
+    margin-bottom: 5px;
 }
