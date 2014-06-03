@@ -3,6 +3,7 @@ var munchApp = angular.module('munchApp',
      'ui.bootstrap',
      'ui.router',
      'ngAnimate',
+     'customFilters',
      'firebase'
     ]
 );

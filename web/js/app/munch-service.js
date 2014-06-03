@@ -24,7 +24,11 @@ munchApp
             //return $http.get(
             //    api_url + items_url + objId
             //);
-            return {id: 1, username: 'sam', restrictions: ['cocount', 'dairy'], savedResults: [], location: 'Canada'};
+            return {
+                id: 1, username: 'homer', firstname: 'Homer', lastname: 'Simpson', restrictions: [
+                        {food: 'coconut', 'severity': 'allergy'},
+                        {food: 'dairy', 'severity': 'preference'}
+                    ], savedResults: [], location: 'Canada'};
         },
         del: function(obj_url, obj) {
             return $http.delete(

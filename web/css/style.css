@@ -10,3 +10,20 @@
 .indent {
     padding-left: 30px;
 }
+.severity-allergy {
+    color: red;
+}
+.severity-intolerance {
+    color: orange;
+}
+.severity-preference {
+    color: blue;
+}
+.severity-default {
+    color: green;
+}
+.is-restricted-true {
+    font-weight: bold;
+    background: purple;
+    color: white;
+}

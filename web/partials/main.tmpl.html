@@ -5,15 +5,15 @@
         <input type="text" ng-model="searchText" class="form-control" placeholder="Search">
         <div ng-show="searchText.length > 0" ng-repeat="result in results | filter:searchText">
             <div class="row box margin-bottom">
-                <div class="col-sm-6">
+                <div class="col-sm-9">
                     <h3>{{ result.food }}</h3>
                     <div class="row indent">
                     <span ng-repeat="sub in result.subs">
-                        {{ sub }}<span ng-show=" ! $last ">, </span>
+                        <span class="is-restricted-{{ sub | isRestrictedFilter: user.restrictions }}">{{ sub }}</span><span ng-show=" ! $last ">, </span></span>
                     </span>
                 </div>
                 </div>
-                <div class="col-sm-6 padding-top">
+                <div class="col-sm-3 padding-top">
                     <input type="checkbox" ng-click="saveResult(result)"> Save Result
                 </div>
             </div>
@@ -22,7 +22,7 @@
     <div class="col-sm-4">
         <h4><strong>Your Restrictions</strong></h4>
         <ul ng-repeat="item in user.restrictions">
-            <li>{{ item }}</li>
+            <li class="severity-{{item.severity}}">{{ item.food }}</li>
         </ul>
         <hr>
         <h4><strong>Your Saved List</strong></h4>
