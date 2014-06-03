@@ -47,6 +47,24 @@ munchApp
                     }
                 },
             }
+        })
+        .state('users', {
+            url: '/users/',
+            views: {
+                'main': {
+                    templateUrl: '../web/partials/users.tmpl.html',
+                    controller: 'UsersCtrl',
+                    resolve: {
+                        user: function (MunchService) {
+                            userId = 1;
+                            return {data: MunchService.get('users/', userId)};
+                        },
+                        users: function (MunchService) {
+                            return {data: MunchService.get('users/')};
+                        },
+                    }
+                },
+            }
         });
 })
 

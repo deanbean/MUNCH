@@ -24,11 +24,25 @@ munchApp
             //return $http.get(
             //    api_url + items_url + objId
             //);
-            return {
-                id: 1, username: 'homer', firstname: 'Homer', lastname: 'Simpson', restrictions: [
+            if(objId) {
+                return {
+                    id: 1, username: 'homer', firstname: 'Homer', lastname: 'Simpson', avatar: 'homer.jpg', restrictions: [
                         {food: 'coconut', 'severity': 'allergy'},
                         {food: 'dairy', 'severity': 'preference'}
                     ], savedResults: [], location: 'Canada'};
+            }
+            else {
+                return [
+                    {id: 1, username: 'homer', firstname: 'Homer', lastname: 'Simpson', avatar: 'homer.jpg', restrictions: [
+                        {food: 'coconut', 'severity': 'allergy'},
+                        {food: 'dairy', 'severity': 'preference'}
+                    ], savedResults: [], location: 'Canada'},
+                    {id: 2, username: 'marge', firstname: 'Marge', lastname: 'Simpson', avatar: 'marge.jpg', restrictions: [
+                        {food: 'rice', 'severity': 'allergy'},
+                        {food: 'nuts', 'severity': 'preference'}
+                    ], savedResults: [], location: 'Canada'},
+                ]
+            }
         },
         del: function(obj_url, obj) {
             return $http.delete(

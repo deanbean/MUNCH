@@ -8,10 +8,10 @@
                 <div class="col-sm-9">
                     <h3>{{ result.food }}</h3>
                     <div class="row indent">
-                    <span ng-repeat="sub in result.subs">
-                        <span class="is-restricted-{{ sub | isRestrictedFilter: user.restrictions }}">{{ sub }}</span><span ng-show=" ! $last ">, </span></span>
-                    </span>
-                </div>
+                        <span ng-repeat="sub in result.subs">
+                            <span class="is-restricted-{{ sub | isRestrictedFilter: user.restrictions }}">{{ sub }}</span><span ng-show=" ! $last ">, </span></span>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-sm-3 padding-top">
                     <input type="checkbox" ng-click="saveResult(result)"> Save Result
@@ -31,8 +31,3 @@
         </ul>
     </div>
 </div>
-
-    <div>
-    
-</div>
-
