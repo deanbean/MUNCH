@@ -8,7 +8,7 @@
             <h4>{{user.firstname}} {{user.lastname}}</h4>
         </div>
     </div>
-    <div class="row box">
+    <div class="row">
         <h2>Restrictions</h2>
         <form name="newRestrictionForm">
             <input ng-model="newRestriction.food" type="text" id="new-restriction-food" placeholder="add food..." required />
@@ -21,9 +21,9 @@
             <li ng-repeat="item in user.restrictions" class="severity-{{item.severity}}"><strong>{{item.food}}</strong> [{{item.severity}}]</li>
         </ul>
     </div>
-    <div class="row box" class="notesBody">
+    <div class="row notesbox">
         <h2>Notes</h2>
-        <div>
+        <div class="notesBody">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed urna vitae massa tempus ullamcorper interdum ac ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis adipiscing tortor rutrum tortor vehicula cursus. Sed a malesuada tortor. Phasellus libero erat, luctus vitae urna non, mattis laoreet mi. Maecenas a metus id lorem pretium aliquet. Vestibulum ultrices velit at magna imperdiet volutpat. Praesent et varius est. Fusce nec massa in mauris placerat rutrum scelerisque ut augue.
         </div>
     </div>

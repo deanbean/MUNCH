@@ -14,7 +14,7 @@ body{
 
 }
 .notesBody{
-    padding: 10px;
+    padding: 15px;
 }
 .top-nav {
     background-color: #363636;
@@ -22,6 +22,10 @@ body{
 }
 .box {
     border: 1px solid #efefef !important;
+}
+.notesbox {
+    border: 1px solid #efefef !important;
+    width: 1100px;
 }
 .padding-top {
     padding-top: 20px;
