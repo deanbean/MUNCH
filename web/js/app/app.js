@@ -65,6 +65,29 @@ munchApp
                     }
                 },
             }
+        })
+        .state('restaurants', {
+            url: '/restaurants/',
+            views: {
+                'main': {
+                    templateUrl: '../web/partials/restaurants.tmpl.html',
+                    controller: 'RestaurantsCtrl',
+                    resolve: {
+                        user: function (MunchService) {
+                            userId = 1;
+                            return {data: MunchService.get('users/', userId)};
+                        },
+                        restaurants: function (MunchService) {
+                            return {
+                                data: [
+                                    {id: 1, name: 'The Munch Shack', info: '2906 Main St., Vancouver, 604 555 555', restrictions: ['dairy', 'Coconut']},
+                                    {id: 2, name: 'Get Your Munch On', info: '1106 Cordova St., Vancouver, 604 555 555', restrictions: ['Gluten', 'Coconut']}
+                                ]
+                            };
+                        },
+                    }
+                },
+            }
         });
 })
 

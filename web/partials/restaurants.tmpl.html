@@ -1,0 +1,31 @@
+<h1>Find a place to Munch!</h1>
+<hr />
+<div class="container row">
+    <div class="col-sm-8">
+        <input type="search" ng-model="searchText" class="form-control" placeholder="Search...">
+        <hr />
+        <div ng-show="searchText.length > 0" ng-repeat="restaurant in restaurants | filter:searchText">
+            <div class="row box margin-bottom">
+                <div class="col-sm-9">
+                    <h2>{{ restaurant.name }}</h2>
+                    <div class="row indent">
+                        <p>{{ restaurant.info }}</p>
+                        <span ng-repeat="res in restaurant.restrictions">
+                            <span class="is-restricted-{{ res | isRestrictedFilter: user.restrictions }}">{{ res }}</span><span ng-show=" ! $last ">, </span></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-3 padding-top">
+                    <input type="checkbox" ng-click="saveResult(restaurant)"> Save Result
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <h4><strong>Your Restrictions</strong></h4>
+        <ul ng-repeat="item in user.restrictions" class="big-list">
+            <li class="severity-{{item.severity}}">{{ item.food }}</li>
+        </ul>
+        <hr>
+    </div>
+</div>
