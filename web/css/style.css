@@ -16,6 +16,12 @@ hr {
     background-color: rgba(255,255,255,0.3);
 
 }
+.bg_base{
+    background-color: rgba(0,0,0,0.2);
+    padding-top: 5px;
+    padding-left: 15px;
+    max-width: 350px;
+}
 .notesBody{
     padding: 15px;
 }
@@ -46,21 +52,26 @@ hr {
     font-size: 2em;
 }
 .severity-allergy {
-    color: #ffec4f;
+    color: #ffee62;
+    font-weight:bold;
+    /*coconut*/
 }
 .severity-severe-intolerance {
-    color: #ffbf3f;
+    /*color: #ffbf3f;*/
+    color: #ffcb64;
+    font-weight:bold;
 }
 .severity-intolerance {
-    /* color: #d68f00; */
-    color: #ffcb64;
+    color: #ffbf3f;
+    font-weight:bold;
+    /*mustard*/
 }
 .severity-preference {
-    /*color: #ffbf3f;*/
-    color: #ea9d01;
+    color: #f1a50b;
+    font-weight:bold;
+    /*vegan*/
 }
 .severity-default {
-   /* color: #ffcb64; */
    color: #ffbf3f;
 }
 .is-restricted-true {
