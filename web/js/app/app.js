@@ -97,7 +97,7 @@ munchApp
                     controller: 'ContactCtrl',
                     resolve: {
                         contact: function (MunchService) {
-                            return {data: {twitter: 'bal@blah', email: 'deanna.m.cooney@gmail.com'}, web: {'http://munching.azurewebsites.net/web/#/restaurants/'}};
+                            return {data: {twitter: 'bal@blah', email: 'deanna.m.cooney@gmail.com'}, web: 'http://munching.azurewebsites.net/web/#/restaurants/',};
                         },
                     }
                 },

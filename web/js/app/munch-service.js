@@ -30,7 +30,7 @@ munchApp
                         {food: 'coconut', severity: 'allergy'},
                         {food: 'soy', severity: 'severe intolerance'},
                         {food: 'mustard', severity: 'intolerance'},
-                        {food: 'vegan', severity: 'preference'}
+                        {food: 'vegan', severity: 'preference'},
                     ], savedResults: [], location: 'Canada'};
             }
             else {
