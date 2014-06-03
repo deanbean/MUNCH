@@ -17,6 +17,21 @@ munchApp
                     {
                         id: 2, food: 'Cabbage', subs: ['reese\'s pieces',],
                     },
+                    {
+                        id: 3, food: 'Nuts', subs: ['Corn Puffs', 'Almonds'],
+                    },
+                    {
+                        id: 4, food: 'Seeds', subs: ['Crazy Strings', 'Liquorice'],
+                    },
+                    {
+                        id: 5, food: 'Sea Food', subs: ['Finding Nemo Gummies', 'Sharkies'],
+                    },
+                    {
+                        id: 6, food: 'Vegitarian', subs: ['Grass', 'Apples'],
+                    },
+                     {
+                        id: 6, food: 'Dairy', subs: ['Soy', 'Coconut'],
+                    },
                 ]
             };
         },
