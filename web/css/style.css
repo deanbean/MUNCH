@@ -37,16 +37,16 @@ body{
     padding-left: 30px;
 }
 .severity-allergy {
-    color: red;
+    color: #ffec4f;
 }
 .severity-intolerance {
-    color: orange;
+    color: #c66600;
 }
 .severity-preference {
-    color: blue;
+    color: #ffbf3f;
 }
 .severity-default {
-    color: green;
+    color: #ffaa00;
 }
 .is-restricted-true {
     font-weight: bold;
