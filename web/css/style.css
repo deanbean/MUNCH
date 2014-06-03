@@ -46,24 +46,16 @@ hr {
     font-size: 2em;
 }
 .severity-allergy {
-    background: red;
-    padding: 5px;
-    color: white;
+    color: #ffec4f;
 }
 .severity-intolerance {
-    background: orange;
-    padding: 5px;
-    color: white;
+    color: #c66600;
 }
 .severity-preference {
-    background: blue;
-    padding: 5px;
-    color: white;
+    color: #ffbf3f;
 }
 .severity-default {
-    background: green;
-    padding: 5px;
-    color: white;
+    color: #ffaa00;
 }
 .is-restricted-true {
     font-weight: bold;
